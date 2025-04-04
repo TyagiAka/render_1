@@ -1,45 +1,103 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Demo HTML Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Awesome Page</title>
   <style>
+    /* Reset some default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
       color: #333;
+      line-height: 1.6;
+      padding: 40px;
     }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
     h1 {
-      color: #007BFF;
+      color: #2c3e50;
+      margin-bottom: 10px;
     }
-    button {
+
+    p.tagline {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 30px;
       padding: 10px 20px;
-      background-color: #28a745;
-      border: none;
+      background-color: #3498db;
       color: white;
+      text-decoration: none;
       border-radius: 5px;
-      cursor: pointer;
+      transition: background 0.3s ease;
     }
-    button:hover {
-      background-color: #218838;
+
+    a.button:hover {
+      background-color: #2980b9;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #777;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to My Demo Page</h1>
-  <p>This is a simple HTML demo to show the basics of a web page.</p>
+  <header>
+    <h1>Welcome to My Page</h1>
+    <p class="tagline">Clean. Responsive. Minimal.</p>
+  </header>
 
-  <ul>
-    <li>HTML for structure</li>
-    <li>CSS for styling</li>
-    <li>JavaScript for interactivity (optional)</li>
-  </ul>
+  <section>
+    <h2>About This Page</h2>
+    <p>This is a demo of a modern, responsive HTML page with no frameworks—just clean code and nice design.</p>
+    
+    <h3>Features:</h3>
+    <ul>
+      <li>Modern responsive layout</li>
+      <li>Beautiful styling using CSS</li>
+      <li>No external dependencies</li>
+    </ul>
 
-  <button onclick="alert('Hello from the demo page!')">Click Me</button>
+    <a class="button" href="#">Get Started</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Awesome Page. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
+
 
